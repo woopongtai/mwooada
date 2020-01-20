@@ -65,14 +65,14 @@ Try out these commands first, and record what happened.
 
 | Command | What happened? |
 | :--- | :--- |
-| `ls -a .` | |
-| `man ls` | |
-| `q` | |
-| `pwd` | |
-| `cd ~` | |
-| `cd .` | |
-| `cd ..` | |
-| `cd -` | |
+| `ls -a .` | unknown ".. ." |
+| `man ls` | Pulled up what appears to be a manual |
+| `q` | unknown "command not found: q" |
+| `pwd` | unknwn "cygdrive/c/ada/jumpstart" current location perhaps?|
+| `cd ~` | Possible: send back to top folder  |
+| `cd .` | unknown |
+| `cd ..` | moved to "c" file? |
+| `cd -` | moved to previous file? |
 
 Then use `man` to explore these commands.  For example try `man ls` in terminal.  You can exit with the `q` key.
 
