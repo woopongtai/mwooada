@@ -9,7 +9,7 @@
 
 ##### Gonzaga University School of Law - Spokane, WA (September 2011 - December 2013)
 * Juris Doctor
-* Gradutated early
+* Graduated early
 
 ## Work Experience 
 ##### Woo Law of Washington LLC, Principle 2015-2020
@@ -20,7 +20,7 @@
 * Was elected president of the board to guide the CSPC through an extremely difficult transition period when building was sold out from under them, resulting in a leaner, more professional organization.
 
 ##### Garden City Group, LLC., Associate 2014-2015
-* Worked as part of a team to facilitate a non-litigation refund program using multiple datebases and programs. 
+* Worked as part of a team to facilitate a non-litigation refund program using multiple databases and programs. 
 * (Note: company has since been merged with Epiq)
 
 ## Computer Skills
@@ -30,9 +30,9 @@
 * Beginner: [None]
 
 #### Software
-* Microsoft Office (2010 and 365 versions): Word, Excel, Powerpoint, Outlook, Publisher, OneNote
-* Google G Suite: GMail (admin), Google Docs, Calander, Voice, Drive
-* Ituit Quickboks Online
+* Microsoft Office (2010 and 365 versions): Word, Excel, PowerPoint, Outlook, Publisher, OneNote
+* Google G Suite: GMail (admin), Google Docs, Calendar, Voice, Drive
+* Intuit Quickbooks Online
 * Dropbox
 * Box
 * Docusign
