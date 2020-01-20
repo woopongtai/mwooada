@@ -1,0 +1,5 @@
+# Mei Woo - Short Bio
+
+_[Resume]()_ // _[LinkedIn](https://www.linkedin.com/in/woolawwa/)_  
+
+Mei (she/her) earned a Bachelor’s of Arts double-majoring in government and philosphy from Manhattan College in New York City, utilizing her time there to engage with the Ethics Bowl team (taking her team to the national ethics bowl in 2011) and taking the opportunity to study US federal politics and legislation hands on during a semester in Washington DC, where she interned for a member of the US House of Representatives. Going straight from undergraduate to law school, her ambition forced her to graduate early due to a plethora of credits from working in the schools low-income tax clinic, business law clinic, and a for-credit clerkship with the Washington Public Disclosure Commission. Since graduating, she has primarily worked as a solo-practice attorney in the area of landlord-tenant matters, utilizing a familiarity and adaptability with technology to make her business more efficient. She has a particular interest in client/user-end interfaces that help users use products in an ethical and adjustable manner.
