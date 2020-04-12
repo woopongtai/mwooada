@@ -1,0 +1,75 @@
+# main header
+
+puts "Welcome to Mei's digital vending machine. Remember, everything purchased from this machine is made only of dreams."
+puts "(Dreams do not have enough caloric value to provide general nutrition in a 2,000 calorie diet. Please get actual food)"
+# Space to make easier to read in terminal
+
+puts " "
+
+# initial input (money)
+
+puts "How much money do you have to spend?"
+x = gets.to_f
+puts " "
+if x < 0.50 && x >= 0.0
+  puts "Wow... you can't even afford a vending machine purcahse."
+  elsif x < 0.0
+    puts "You can't have negative money. Like, that's not possible for a vending machine. Now accounting... that's a different story, but for now, try again and reset program." 
+  else
+    puts "Okay! Let's see what you can buy:"
+    
+    # options, designed to not output if you can't afford it. 
+
+    if x >= 0.50
+    puts "  A: $0.50 Extra Gum, Wintermint, 10 pack"
+  end
+
+  if x >= 0.75
+    puts "  B: $0.75 Reeses Easter Egg, single."
+  end
+
+  if x >= 1.0
+    puts "  C: $1.00 Mr. Goodbar"
+  end
+
+  if x >= 1.50
+    puts "  D: $1.50 Cheetos"
+  end
+
+  if x >= 2.00
+    puts "  E: $2.00 King Size Snickers"
+  end
+  puts " "
+    # selection
+  puts "Please make a selection:"
+  alpha = gets.chomp.capitalize
+  puts " "
+  if alpha == "A" && x >= 0.50
+    x = x - 0.50
+    puts "depositing Extra Gum. Your change is $#{x}"
+  elsif alpha == "A" && x < 0.50
+    puts "You do not have enough funds for this purchase. You have not been charged for your purchase. Please reset program and try again."
+  elsif alpha == "B" && x >= 0.75
+    x = x - 0.75
+    puts "depositing Reeses Egg. Your change is $#{x}"
+  elsif alpha == "B" && x < 0.75
+    puts "You do not have enough funds for this purchase. You have not been charged for your purchase. Please reset program and try again."
+  elsif alpha == "C" && x >= 1.00
+    x = x - 1.00
+    puts "depositing Mr. Goodbar. Your change is $#{x}"
+  elsif alpha == "C" && x < 1.00
+    puts "You do not have enough funds for this purchase. You have not been charged for your purchase. Please reset program and try again."elsif alpha == "D" && x >= 1.50
+    x = x - 1.50
+    puts "depositing Bag of Cheetos. Your change is $#{x}"
+  elsif alpha == "E" && x >= 2.00
+    x = x - 2.00
+    puts "depositing Snickers, King Size. Your change is $#{x}"
+  elsif alpha == "E" && x < 2.00
+    puts "You do not have enough funds for this purchase. You have not been charged for your purchase. Please reset program and try again."
+  elsif alpha != "A" || alpha != "B" || alpha != "C" || alpha != "D" || alpha != "E"
+    puts "You do not make a valid selection. You have not been charged for your purchase. Please reset program and try again."
+  end
+end
+
+puts " "
+puts "Thank you for visiting Mei's Vending Machine."
