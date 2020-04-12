@@ -1,0 +1,13 @@
+puts "Input a postive integer value"
+x = gets.to_i 
+puts "Input a postive integer value"
+y = gets.to_i
+puts "Input a postive integer value"
+z = gets.to_i
+
+x = x + 20
+y = y + 20
+z = z + 20
+
+
+puts "Twenty added to the numbers you entered gives us #{x}, #{y}, and #{z}."
