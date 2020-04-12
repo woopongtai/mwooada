@@ -1,0 +1,28 @@
+puts "I want to play a game... with numbers!"
+
+puts " "
+
+# setting the number of iterations that this will go
+# non-functioning code: order = ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th", "11th", "12th", "13th", "14th", "15th", "16th", "17th", "18th", "19th", "20th"]
+puts "How many numbers would you like to enter?"
+z = gets.to_i
+i = 1
+puts "Very well. We will do this #{z} times. Let's see what is divisable by 3."
+
+# builing a times loop
+
+  z.times do 
+  print "Enter the #{i} positive integer:"
+  num = gets.to_i
+  puts " "
+  x = num % 3 
+  if x == 0 
+    puts "#{num} is divisable by 3."
+  elsif x != 0 
+    puts "#{num} is not divisable by 3."
+  end
+  i += 1
+  puts " "
+end
+puts " "
+puts "well played"
