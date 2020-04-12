@@ -1,0 +1,23 @@
+puts "Enter a number to see if it is greater than or equal to 20."
+x = gets.to_i
+if x >= 20
+  puts "#{x} is greater than or equal to twenty."
+else 
+  puts "#{x} is less than twenty."
+end
+
+puts "Enter a number to see if it is greater than or equal to 20."
+x = gets.to_i
+if x >= 20
+  puts "#{x} is greater than or equal to twenty."
+else 
+  puts "#{x} is less than twenty."
+end
+
+puts "Enter a number to see if it is greater than or equal to 20."
+x = gets.to_i
+if x >= 20
+  puts "#{x} is greater than or equal to twenty."
+else 
+  puts "#{x} is less than twenty."
+end
