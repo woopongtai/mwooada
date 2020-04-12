@@ -1,0 +1,30 @@
+puts "Welcome to my Madlib problem. Please enter in some information below:"
+puts "Please provide a first name."
+name = gets.chomp
+puts "Please provide a place."
+place = gets.chomp
+puts "Please provide an activity (verb)."
+activity = gets.chomp
+puts "Please provide an adjective"
+adjective1 = gets.chomp
+puts "Please provide a noun."
+noun1 = gets.chomp
+puts "Please provide the name of a disease."
+disease = gets.chomp
+puts "Please provide the name of an animal."
+animal = gets.chomp
+puts "Please provide an adjective."
+adjective2 = gets.chomp
+puts "Please provide a plural noun."
+noun2 = gets.chomp
+puts "Please provide a country."
+country = gets.chomp
+puts " Please provide a geographic feature."
+geo = gets.chomp
+# visiting an national park
+
+puts "Hello, I'm " + name + " and I want to talk about my faorite place, " + place + " National Park!"
+puts place + " National Park is a wonderful place to " + activity + " and see the roaming " + animal + " in the " + noun1 + "."
+  "It's truly a " + adjective1 + " place to be." 
+puts place + " National Park is also famous for its " + adjective2 + " " + noun2 + " found deep in the " + geo + " where they are rarely disturbed. An outbreak of " + disease + " has unfortunately made these magestic "  + adjective2 + " " + noun2 + " endangered, so see them while you still can."
+puts "Yes, there's nothing quite like " + place + " National Park in " + country + " much less the world."
