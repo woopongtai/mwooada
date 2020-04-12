@@ -1,0 +1,28 @@
+puts "I want to play a game... with numbers!"
+
+puts " "
+
+# setting the number of iterations that this will go
+
+puts "How many numbers would you like to enter?"
+z = gets.to_i
+i = 1
+puts "Very well. We will do this #{z} times. Let's see what is divisable by 3."
+
+# builings a while loop
+
+  while i < z + 1 do
+  print "Enter the #{i} positive integer:"
+  num = gets.to_i
+  puts " "
+  x = num % 3 
+  if x == 0 
+    puts "#{num} is divisable by 3."
+  elsif x != 0 
+    puts "#{num} is not divisable by 3."
+  end
+  i += 1
+  puts " "
+end
+puts " "
+puts "well played"
