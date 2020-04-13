@@ -1,0 +1,59 @@
+#create hash
+
+v = rand(12..21)
+w = rand(12..21)
+x = rand(12..21)
+y = rand(12..21)
+z = rand(12..21)
+
+hash1 = Hash.new
+hash1[:random_numbers] = [v, w, x, y, z]
+
+#create user inputs
+
+puts "Please provide five integer values between 12 and 21, both inclusive:"
+puts "What is the 1st number?"
+a = gets.to_i
+puts "What is the 2nd number?"
+b = gets.to_i
+puts "What is the 3rd number?"
+c = gets.to_i
+puts "What is the 4th number?"
+d = gets.to_i
+puts "What is the 5th number?"
+e = gets.to_i
+
+hash1[:user_input] = [a, b, c, d, e]
+
+#test information 
+
+print hash1[:random_numbers]
+print hash1[:user_input]
+puts hash1[:random_numbers].count(v)
+
+# creating hash 2 (not yet working)
+
+num0 = v
+num1 = w
+num2 = x
+num3 = y
+num4 = z
+num5 = a
+num6 = b
+num7 = c
+num8 = d
+num9 = e
+
+count0 = hash1[:random_numbers].count(v)
+count1 = hash1[:random_numbers].count(w)
+count2 = hash1[:random_numbers].count(x)
+count3 = hash1[:random_numbers].count(y)
+count4 = hash1[:random_numbers].count(z)
+count5 = hash1[:user_input].count(a) 
+count6 = hash1[:user_input].count(b)
+count7 = hash1[:user_input].count(c)
+count8 = hash1[:user_input].count(d)
+count9 = hash1[:user_input].count(e)
+
+puts num8
+puts count8
