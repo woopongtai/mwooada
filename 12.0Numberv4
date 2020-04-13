@@ -1,0 +1,39 @@
+puts "I want to play a game. How many numbers would you like to enter?"
+a = gets.to_i
+
+#create the array
+
+sample = []
+
+i = 0
+
+while i < a do
+  print "Enter the #{i + 1} positive integer:"
+  sample << gets.to_i
+  i += 1
+end
+
+n = 0
+
+puts "Comparing to the last value entered, #{sample.last}, here are the observations:"
+
+while n < a do
+  u = sample[n]
+  max = sample.last
+  if u > sample.last 
+    puts "The value at index #{n}, #{u}  is greater than value at the last index, #{max}."
+  end 
+  if u < sample.last
+    puts "The value at index #{n}, #{u}  is less than value at the last index, #{max}."  
+  end
+  if u == sample.last
+    puts "The value at index #{n}, #{u}  is the  value at the last index, #{max}."
+  end
+  n += 1
+end
+
+
+puts "The minimum value in the array is #{sample.min}."
+puts "The maximum value in the array is #{sample.max}." 
+mean = sample.sum.to_f / a
+puts "The average of all the values in the array is #{mean}."
