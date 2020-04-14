@@ -28,21 +28,23 @@ hash1[:user_input] = [a, b, c, d, e]
 #test information 
 
 print hash1[:random_numbers]
-print hash1[:user_input]
+print hash1[:user_input]/n
 puts hash1[:random_numbers].count(v)
 
 # creating hash 2 (not yet working)
 
-num0 = v
-num1 = w
-num2 = x
-num3 = y
-num4 = z
-num5 = a
-num6 = b
-num7 = c
-num8 = d
-num9 = e
+
+
+num0 = v.to_s
+num1 = w.to_s
+num2 = x.to_s
+num3 = y.to_s
+num4 = z.to_s
+num5 = a.to_s
+num6 = b.to_s
+num7 = c.to_s
+num8 = d.to_s
+num9 = e.to_s
 
 count0 = hash1[:random_numbers].count(v)
 count1 = hash1[:random_numbers].count(w)
@@ -55,5 +57,21 @@ count7 = hash1[:user_input].count(c)
 count8 = hash1[:user_input].count(d)
 count9 = hash1[:user_input].count(e)
 
+hash2 = {
+  "num0" => count0
+  "num1" => count1
+  "num2" => count2
+  "num3" => count3
+  "num4" => count4
+  "num5" => count5
+  "num6" => count6
+  "num7" => count7
+  "num8" => count8
+  "num9" => count9
+}
+
+# hash2.transform_keys{ |key| key.to_s.upcase }
+
 puts num8
 puts count8
+
