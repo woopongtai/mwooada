@@ -58,16 +58,16 @@ count8 = hash1[:user_input].count(d)
 count9 = hash1[:user_input].count(e)
 
 hash2 = {
-  "num0" => count0
-  "num1" => count1
-  "num2" => count2
-  "num3" => count3
-  "num4" => count4
-  "num5" => count5
-  "num6" => count6
-  "num7" => count7
-  "num8" => count8
-  "num9" => count9
+  num0 => hash1[:random_numbers].count(v),
+  num1 => hash1[:random_numbers].count(w),
+  num2 => hash1[:random_numbers].count(x),
+  num3 => hash1[:random_numbers].count(y),
+  num4 => hash1[:random_numbers].count(z),
+  num5 => hash1[:user_input].count(a),
+  num6 => hash1[:user_input].count(b),
+  num7 => hash1[:user_input].count(c),
+  num8 => hash1[:user_input].count(d),
+  num9 => hash1[:user_input].count(e),
 }
 
 # hash2.transform_keys{ |key| key.to_s.upcase }
