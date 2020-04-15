@@ -1,0 +1,115 @@
+#create hash
+
+v = rand(12..21)
+w = rand(12..21)
+x = rand(12..21)
+y = rand(12..21)
+z = rand(12..21)
+
+hash1 = Hash.new
+hash1[:random_numbers] = [v, w, x, y, z]
+
+#create user inputs
+
+puts "Please provide five integer values between 12 and 21, both inclusive:"
+puts "What is the 1st number?"
+a = gets.to_i
+puts "What is the 2nd number?"
+b = gets.to_i
+puts "What is the 3rd number?"
+c = gets.to_i
+puts "What is the 4th number?"
+d = gets.to_i
+puts "What is the 5th number?"
+e = gets.to_i
+
+hash1[:user_input] = [a, b, c, d, e]
+
+#test information 
+
+# print hash1[:random_numbers]
+# print hash1[:user_input]
+# puts " "
+# print hash1.values
+
+# creating hash 2 (not yet working)
+
+
+
+num0 = v.to_s + "r"
+num1 = w.to_s + "r"
+num2 = x.to_s + "r"
+num3 = y.to_s + "r"
+num4 = z.to_s + "r"
+num5 = a.to_s + "u"
+num6 = b.to_s + "u"
+num7 = c.to_s + "u"
+num8 = d.to_s + "u"
+num9 = e.to_s + "u"
+
+count0 = hash1[:random_numbers].count(v)
+count1 = hash1[:random_numbers].count(w)
+count2 = hash1[:random_numbers].count(x)
+count3 = hash1[:random_numbers].count(y)
+count4 = hash1[:random_numbers].count(z)
+count5 = hash1[:user_input].count(a) 
+count6 = hash1[:user_input].count(b)
+count7 = hash1[:user_input].count(c)
+count8 = hash1[:user_input].count(d)
+count9 = hash1[:user_input].count(e)
+
+hash2 = {
+  num0 => hash1[:random_numbers].count(v),
+  num1 => hash1[:random_numbers].count(w),
+  num2 => hash1[:random_numbers].count(x),
+  num3 => hash1[:random_numbers].count(y),
+  num4 => hash1[:random_numbers].count(z),
+  num5 => hash1[:user_input].count(a),
+  num6 => hash1[:user_input].count(b),
+  num7 => hash1[:user_input].count(c),
+  num8 => hash1[:user_input].count(d),
+  num9 => hash1[:user_input].count(e),
+}
+
+puts " "
+puts " "
+# print hash2
+puts " "
+puts " "
+
+
+3.times do
+ print "Give me a number you want information about:"
+ n = gets.to_i
+ nr = n.to_s + "r"
+ nu = n.to_s + "u"
+ puts "" 
+ puts "Using only the first hash:"
+  if hash1[:random_numbers].include?(n) == true
+    puts "The number, #{n} shows up #{hash1[:random_numbers].count(n)} time(s) in the randomly generated numbers."
+  else
+    puts "The number, #{n} did not show in the randomly generated numbers."
+  end
+  if hash1[:user_input].include?(n) == true
+    puts "The number, #{n} was provided #{hash1[:user_input].count(n)} time(s) by the user."
+  else
+    puts "The number, #{n} was not provided by the user."
+  end
+  puts ""
+  puts "Using only the second hash:"
+  if hash2.key?(nr) == true 
+    puts "The number, #{n} shows up #{hash2[nr.to_s]} time(s) in the randomly generated numbers."
+  else
+    puts "The number, #{n} did not show in the randomly generated numbers."
+  end
+  if hash2.key?(nu) == true 
+    puts "The number, #{n} was provided #{hash2[nu.to_s]} time(s) by the user."
+  else
+    puts "The number, #{n} was not provided by the user."
+  end
+  puts ""
+end
+
+
+
+
