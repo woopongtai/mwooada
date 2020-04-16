@@ -1,9 +1,0 @@
-# outline:
-# create hashs with applicable information for each party: tickets, cash on food, total cash spent
-# create 3 cycle loop (one for each party).
-# Loop should contain user inputs for tickets, orders of cotton candy, orders of curly fries (large, small). 
-# ticket intake needs to take into account discount for 4 tickets (remainder tool?).
-# post loop: create two arrays and one hash
-# array 1: total cash earned by fair
-# array 2: total amount spent on concessions
-# hash: party number and amount spent
