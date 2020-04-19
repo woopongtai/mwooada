@@ -61,6 +61,7 @@ party3 = {
 puts "Welcome to the Ada State Fair Income Tracking program. Authorized staff only."
 puts ""
 puts "Please provide the requested information. If you input the wrong values, proceed to the end of the party inputs to reinput the correct values."
+puts " "
 
 # 3.0 Party information input loop
 
@@ -89,10 +90,11 @@ while p < 4
 
   # 3.2: Confirmation query
 
-  puts "Please verify the above values are correct and that there are no typoes. If you do not confirm the inputed values, you will need to reinput all values for this party."
+  puts "Please verify the above values are correct and that there are no typos. If you do not confirm the inputted values, you will need to reinput all values for this party."
   puts " "
   print "Are all of the values correct? (Y/N):"
   confirm = gets.chomp.upcase
+  puts " "
   if confirm == "Y" || confirm == "YE" || confirm == "YES" || confirm == "YES."
     
     # 3.3: Convert inputs into float (.to_f) (i.e. $ amounts)  at the rates proscribed
@@ -101,13 +103,13 @@ while p < 4
     cccash = ( cc.to_f * 1.25 )
     cfscash = ( cfs.to_f * 2.50 )
     cflcash = ( cfl.to_f * 4.00 )
-    
+  
     # puts " "
     # puts "test ticket cash: $#{ticash}"
     # puts "test cotton candy cash: $#{cccash}"
     # puts "test curly fries small cash: $#{cfscash}"
     # puts "test curly fries large cash: $#{cflcash}"
-    
+  
 
     # 3.4: convert dollar amounts into combined totals 
 
@@ -132,7 +134,8 @@ while p < 4
       party3[:cashfoo] = foocash
       party3[:cashtot] = totcash
     end
-    
+   
+   
     puts "Data saved for party #{p}."
     puts " "
 
@@ -159,6 +162,9 @@ end
 # 4: create simple array to determine which party spent the most.
 
 partytotals = [party1[:cashtot], party2[:cashtot], party3[:cashtot]]
+
+# puts " " 
+# print partytotals
 
 # 5: configure floats to produce a specific number of decimal places and create string (found and copied via google search: "https://www.ruby-forum.com/t/always-show-2-decimal-places/96642/4")
 
